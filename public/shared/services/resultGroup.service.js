@@ -2,7 +2,7 @@
    'use strict'
   angular.module('stoneBoard').factory('resultGroupService', function($http){
 
-    let urlBase = 'http://localhost:9090/api/resultGroup';
+    let urlBase = 'https://stone-board-api.herokuapp.com/api/resultGroup';
 
     function findById(id){
       return $http.get(urlBase + '/' + id);

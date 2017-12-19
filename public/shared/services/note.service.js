@@ -2,7 +2,7 @@
    'use strict'
   angular.module('stoneBoard').factory('noteService', function($http){
 
-    let urlBase = 'http://localhost:9090/api/note';
+    let urlBase = 'https://stone-board-api.herokuapp.com/api/note';
 
     function findByCard(idCard){
       return $http.get(urlBase + '/findByCard/' + idCard);
