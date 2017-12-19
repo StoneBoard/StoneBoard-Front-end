@@ -2,7 +2,7 @@
    'use strict'
   angular.module('stoneBoard').factory('postitService', function($http){
 
-    let urlBase = 'http://stone-board-api.herokuapp.com/api/card';
+    let urlBase = 'https://stone-board-api.herokuapp.com/api/card';
 
     function saveCard(card){
 
@@ -13,7 +13,7 @@
       return $http.put(urlBase, card);
     }
     function deleteCard(id){
-      return $http.delete('http://stone-board-api.herokuapp.com/api/card/' + id);
+      return $http.delete('https://stone-board-api.herokuapp.com/api/card/' + id);
     }
     function getCardsOutsideResultGroup(idBoard) {
       return $http.get(urlBase + '/cardsOutsideResultGroup/' + idBoard)

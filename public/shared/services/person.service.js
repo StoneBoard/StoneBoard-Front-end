@@ -4,7 +4,7 @@
   .module('stoneBoard')
   .factory('personService', function($http){
 
-  	let urlBase = 'http://stone-board-api.herokuapp.com/api/person';
+  	let urlBase = 'https://stone-board-api.herokuapp.com/api/person';
 
     function savePerson(person){
       return $http.post(urlBase +'/addPerson' , person);

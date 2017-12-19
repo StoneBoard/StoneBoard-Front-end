@@ -2,7 +2,7 @@
    'use strict'
   angular.module('stoneBoard').factory('voteService', function($http){
 
-    let urlBase = 'http://stone-board-api.herokuapp.com/api/vote';
+    let urlBase = 'https://stone-board-api.herokuapp.com/api/vote';
 
     function saveVote(vote){
 
