@@ -14,7 +14,7 @@
   angular
     .module('stoneBoard').constant('authConfig', {
 
-      urlUsuario: 'https://stone-board-api.herokuapp.com/api/initial/login',
+      urlUsuario: 'http://stone-board-api.herokuapp.com/api/initial/login',
 
       urlLogin: '/login',
 

@@ -2,10 +2,10 @@
    'use strict'
   angular.module('stoneBoard').factory('boardService', function($http){
 
-    let urlBase = 'https://stone-board-api.herokuapp.com/api/board';
+    let urlBase = 'http://stone-board-api.herokuapp.com/api/board';
 
     function findById(id){
-      return $http.get('https://stone-board-api.herokuapp.com/api/board/' + id);
+      return $http.get('http://stone-board-api.herokuapp.com/api/board/' + id);
     }
 
     function saveBoard(board){
@@ -13,7 +13,7 @@
     }
 
     function addMembers(boardMembers){
-      return $http.put('https://stone-board-api.herokuapp.com/api/board/addMember', boardMembers);
+      return $http.put('http://stone-board-api.herokuapp.com/api/board/addMember', boardMembers);
     }
 
     function update(board){
