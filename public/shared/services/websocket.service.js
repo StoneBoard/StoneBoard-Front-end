@@ -16,7 +16,7 @@
       idBoard = _idBoard;
 
       var auth = window.atob(authService.webSocketAuth());
-      socket = new WebSocket(`ws://${auth}@localhost:9090/api/websocket`);
+      socket = new WebSocket(`ws://${auth}@stone-board-api.herokuapp.com/api/websocket`);
 
       stompClient = Stomp.over(socket);
       stompClient.connect({}, function (frame) {});
