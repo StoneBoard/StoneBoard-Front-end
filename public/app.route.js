@@ -55,7 +55,7 @@
 
       .when('/board/:idBoard/result-group', {
         controller: 'controllerResultGroup',
-        templateUrl: 'components/ResultGroup/result.group.html',
+        templateUrl: 'components/resultGroup/result.group.html',
         resolve: {
           autenticado: function (authService) {
             return authService.isAutenticadoPromise();
@@ -65,7 +65,7 @@
 
       .when('/board/:idBoard/result-group/detail/:idResultGroup?', {
         controller: 'controllerResultGroupDetail',
-        templateUrl: 'components/ResultGroup/result.group.detail.html',
+        templateUrl: 'components/resultGroup/result.group.detail.html',
         resolve: {
           autenticado: function (authService) {
             return authService.isAutenticadoPromise();

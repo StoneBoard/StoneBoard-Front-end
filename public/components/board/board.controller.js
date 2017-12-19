@@ -8,8 +8,7 @@
       $scope.colorPallet = utils.colorPallet;
       $scope.rowStyle = {};
       $scope.usuario = authService.getUsuario();
-      $scope.card = {};
-
+      
       personService.isAdmin($routeParams.idBoard).then(function (response) {
         $scope.isAdmin = response.data;
       });
@@ -37,7 +36,6 @@
         card.id_session = session.id;
         card.color = session.color;
         websocketService.sendNewCard(card);
-        delete $scope.card.text;
       }
 
       function boardStatus(date) {
