@@ -10,7 +10,7 @@ Git, NodeJS, NPM, Heroku CLI
 git clone <repo>
 cd front
 heroku login
-heroku create
+heroku apps:create stone-board
 git push heroku master
 heroku open
 heroku logs --tail
